@@ -1,0 +1,14 @@
+<%-include('../partials/header.ejs')  %> 
+
+
+<form class="card" style="margin: 10px" action="/clucks/form" method="POST">
+  <div class="card-body">
+    <label class="card-title mb-2 text-muted  p-2 form-label" for="formGroupExampleInput">Content</label><br>
+    <textarea class="text-muted mb-2 d-block p-2 form-control" id="formGroupExampleInput" type="text" name="content" placeholder="Whatchoo cluckin' 'bout?" cols="20" rows="8"></textarea>
+    <br>
+    <label class="card-title mb-2 text-muted  p-2 form-label" for="formGroupExampleInput">Image Url</label><br>
+    <textarea class="text-muted mb-2 d-block p-2 form-control" id="formGroupExampleInput" type="text" name="image_url" placeholder="https://sample.com/image.gifv"></textarea>
+    <br>
+    <button class="list-group-item-light btn btn-outline-secondary  btn-lg buttonRight" type="submit">Cluck!</button>
+  </div>
+</form>
