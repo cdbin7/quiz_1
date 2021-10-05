@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    
+    <div class="d-flex flex-row justify-content-between align-items-center">
+      <!-- <nav class="nav justify-content-start"">
+        <a class="nav-link active fs-2" aria-current="page" href="#"></a>
+      </nav> -->
+
+      <form action="/clucks/index" method="POST" class="nav justify-content-start brandForm">
+        <button class="nav-link active fs-2 emoji" type="submit">
+          <img class="brand" src="/images/emoji_rooster.png" alt="">
+        </button>
+      </form>
+
+        <ul class="nav justify-content-end">
+          <form action="/formPage" method="POST" style="margin-right: 10px">
+            <button class="av-link btn btn-secondary text-light btn-lg " type="submit">Cluck!</button>
+          </form>
+
+          <% if(username){ %> 
+            <li class="nav-item">
+              <a class="nav-link link-secondary btn-lg" style="margin-right: 10px" href="#"><%-username%></a>
+            </li>
+            <form action="/logout" method="POST" class=form-inline>
+              <button class=" btn btn-secondary text-light btn-lg" type="submit">Sign Out</button>
+            </form>
+            <% } else {%>
+              <form action="/loginHeader" method="POST" class=form-inline>
+                <button class="av-link btn btn-secondary text-light d-flex justify-content-around btn-lg" style="margin-right: 10px" type="submit">Sign In</button>
+              </form>
+            <% } %> 
+            </ul>
+        </div>
+      </div>
+    <hr>
+  </header>
+  

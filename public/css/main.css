@@ -1,0 +1,34 @@
+.avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.brand {
+  width: 70px;
+  height: 70px;
+}
+
+.rightNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonRight {
+  float: right;
+  width: 300px;
+}
+
+.emoji {
+  border: none;
+  background-color: white;
+}
+
+.postImg {
+  max-width: 600px;
+  width: 60%;
+  border-radius: 20px;
+  border-color: bisque;
+  border-style: dotted;
+  border-width: 10px;
+}
